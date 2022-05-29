@@ -26,7 +26,11 @@ let displayValue = parseFloat(display.textContent);
 
 const digits = document.querySelectorAll(".digits > button");
 
-
+digits.forEach(element => {
+    element.addEventListener('click', a => { 
+        display.textContent+=element.textContent
+    })
+});
 
 
 console.log(displayValue);

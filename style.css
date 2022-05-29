@@ -1,0 +1,54 @@
+
+.calculator{
+    display:grid;
+    width: 75vw;
+    gap:10px;
+    padding-left:12.5vw;
+}
+.clear{
+    display:flex;
+    flex-wrap:nowrap;
+    gap: 2px;
+}
+.clear > button{
+    flex-grow: 1;
+    width:50%;
+}
+button{
+    background-color: chocolate;
+    border: 1px solid black;
+    height:30px;
+    font-weight: bold;
+}
+.digits{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 2px;
+    align-content:center;
+}
+.digits > button{
+    width:33%;
+    flex-grow:1;
+    text-align:center;
+}
+
+.operators{
+    display:flex;
+    flex-wrap:nowrap;
+    gap: 2px;
+}
+.operators > button{
+    flex-grow:1;
+    gap: 2px;
+    width:50%;
+}
+
+.output{
+    height:35px;
+    width:100%;
+    text-align:right;
+    border:1px solid black;
+    background-color: rgb(192, 192, 192);
+    line-height:35px;
+    margin-right: 10px;
+}

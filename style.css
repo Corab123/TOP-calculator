@@ -1,54 +1,100 @@
 
 .calculator{
-    display:grid;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-items:center;
     width: 75vw;
     gap:10px;
-    padding-left:12.5vw;
+    margin:10px;
+    margin-top:50px;
 }
-.clear{
+
+
+.frame {
     display:flex;
-    flex-wrap:nowrap;
-    gap: 2px;
+    align-content:center;
+    justify-content: center;
+    width:100%;
+    gap:2px;
+    padding:10px;
+    max-width:406px
 }
-.clear > button{
-    flex-grow: 1;
-    width:50%;
+
+.output{
+    display:flex;
+    flex-direction:column;
+    height:60px;
+    padding-right:10px;
+    width:100%;
+    text-align:right;
+    border:1px solid black;
+    background-color: rgb(192, 192, 192);
+    line-height:35px;
+    justify-content: center;
+    max-width:396px;
+}
+
+#history{
+    font-size: smaller;
+}
+#calculatedValue{
+    font-size:larger;
 }
 button{
     background-color: chocolate;
     border: 1px solid black;
     height:30px;
     font-weight: bold;
+    max-width: 100px;
+    width:30px;
 }
+
 .digits{
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:column;
     gap: 2px;
     align-content:center;
-}
-.digits > button{
-    width:33%;
+    justify-items: center;
     flex-grow:1;
-    text-align:center;
+}
+
+.digitButton {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:right;
+    flex-direction:row;
+    gap:2px;
+}
+
+.digitButton > button{
+    flex-grow:1;
+}
+
+.clearequal{
+    display:flex;
+    flex-direction: row;
+    flex-grow:2;
+    gap:2px;
+}
+
+.clearequal > button{
+    flex-grow:1;
+    gap:2px;
 }
 
 .operators{
     display:flex;
-    flex-wrap:nowrap;
-    gap: 2px;
-}
-.operators > button{
+    flex-direction: column;
+    align-items:flex-end;
     flex-grow:1;
     gap: 2px;
-    width:50%;
 }
 
-.output{
-    height:35px;
+.operators > button{
+    gap: 2px;
     width:100%;
-    text-align:right;
-    border:1px solid black;
-    background-color: rgb(192, 192, 192);
-    line-height:35px;
-    margin-right: 10px;
+    flex-grow:1;
 }
+
+
